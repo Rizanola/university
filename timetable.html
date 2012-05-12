@@ -1,0 +1,458 @@
+<html>
+	<head>
+		<style>
+			a
+			{
+				color: auto;
+				text-decoration: none;
+			}
+		
+			#timetable
+			{
+				margin: 10px auto;
+				border-spacing: 10px;
+			}
+			
+			#timetable tr
+			{
+				height: 50px;
+			}
+		
+			#timetable th,
+			#timetable td
+			{
+				padding: 15px;
+				border-radius: 15px;
+				text-align: center;
+				vertical-align: middle;
+				width: 150px;
+			}
+			
+			#timetable th
+			{
+				width: auto;
+			}
+		
+			#timetable .graphics
+			{
+				background-color: #ff0000;
+				border: 2px solid #000;
+			}
+			
+			#timetable .graphicsLab
+			{
+				color: #a60000;
+				border: 2px solid #a60000;
+				background-color: #ff7373;
+			}
+			
+			#timetable .softwareEngineering
+			{
+				background-color: #ff7400;
+				border: 2px solid #000;
+			}
+			
+			#timetable .softwareEngineeringLab
+			{
+				color: #a64b00;
+				border: 2px solid #a64b00;
+				background-color: #ffb273;
+			}
+			
+			#timetable .groupProject
+			{
+				background-color: #009999;
+				border: 2px solid #000;
+			}
+			
+			#timetable .groupProjectLabTutorial
+			{
+				color: #006363;
+				border: 2px solid #006363;
+				background-color: #5ccccc;
+			}
+			
+			#timetable .humans
+			{
+				background-color: #00cc00;
+				border: 2px solid #000;
+			}
+			
+			#timetable .humansLab
+			{
+				color: #008500;
+				border: 2px solid #008500;
+				background-color: #67e667;
+			}
+			
+			#timetable .alternate
+			{
+				color: #e0e0e0;
+				border: 2px solid #e0e0e0;;
+			}
+			
+			#courses
+			{
+				margin: 50px auto 20px;
+				border-collapse: collapse;
+			}
+			
+			#courses th,
+			#courses td
+			{
+				padding: 10px 15px;
+				border: 3px solid #f0f0f0;
+			}
+			
+			#courses .graphics
+			{
+				color: #ff0000;
+			}
+			
+			#courses .softwareEngineering
+			{
+				color: #ff7400;
+			}
+			
+			#courses .groupProject
+			{
+				color: #009999;
+			}
+			
+			#courses .humans
+			{
+				color: #00cc00;
+			}
+			
+			#dates
+			{
+				margin: 50px auto;
+				text-align: center;
+				border-collapse: collapse;
+			}
+			
+			#dates td
+			{
+				padding: 10px 20px;
+				border: 3px solid #f0f0f0;
+			}
+		</style>
+	</head>
+	<body>
+		<table id="timetable">
+			<tr>
+				<th>
+					Semester One
+				</th>
+				<th>
+					Monday
+				</th>
+				<th>
+					Tuesday
+				</th>
+				<th>
+					Wednesday
+				</th>
+				<th>
+					Thursday
+				</th>
+				<th>
+					Friday
+				</th>
+			</tr>
+			<tr>
+				<th>
+					9:00 - 10:00
+				</th>
+				<!-- Monday -->
+				<td></td>
+				<!-- Tuesday -->
+				<td></td>
+				<!-- Wednesday -->
+				<td rowspan="2" class="softwareEngineeringLab">
+					Software Engineering<br />
+					Erskine 131 (Lab)
+				</td>
+				<!-- Thursday -->
+				<td></td>
+				<!-- Friday -->
+				<td></td>
+			</tr>
+			<tr>
+				<th>
+					10:00 - 11:00
+				</th>
+				<!-- Monday -->
+				<td></td>
+				<!-- Tuesday -->
+				<td class="softwareEngineering">
+					Software Engineering<br />
+					E6 (Lecture)
+				</td>
+				<!-- Wednesday -->
+				<!-- Software Engineering Lab -->
+				<!-- Thursday -->
+				<td></td>
+				<!-- Friday -->
+				<td class="softwareEngineering">
+					Software Engineering<br />
+					E6 (Lecture)
+				</td>
+			</tr>
+			<tr>
+				<th>
+					11:00 - 12:00
+				</th>
+				<!-- Monday -->
+				<td rowspan="2" class="graphicsLab">
+					Graphics<br />
+					Erskine 131 (Lab)
+				</td>
+				<!-- Tuesday -->
+				<td rowspan="2" class="groupProjectLabTutorial">
+					Group Project<br />
+					Erskine 133 (Lab)
+				</td>
+				<!-- Wednesday -->
+				<td class="graphics">
+					Graphics<br />
+					Law 105 (Lecture)
+				</td>
+				<!-- Thursday -->
+				<td></td>
+				<!-- Friday -->
+				<td class="groupProject">
+					Group Project<br />
+					E14 (Lecture)
+				</td>
+			</tr>
+			<tr>
+				<th>
+					12:00 - 1:00
+				</th>
+				<!-- Monday -->
+				<!-- Graphics Lab -->
+				<!-- Tuesday -->
+				<!-- Group Project Lab -->
+				<!-- Wednesday -->
+				<td></td>
+				<!-- Thursday -->
+				<td></td>
+				<!-- Friday -->
+				<td class="humans">
+					Humans<br />
+					Erskine 031 (Lecture)
+				</td>
+			</tr>
+			<tr>
+				<th>
+					1:00 - 2:00
+				</th>
+				<!-- Monday -->
+				<td></td>
+				<!-- Tuesday -->
+				<td></td>
+				<!-- Wednesday -->
+				<td rowspan="2" class="humansLab">
+					Humans<br />
+					Erskine 131 (Lab)
+				</td>
+				<!-- Thursday -->
+				<td class="humans">
+					Humans<br />
+					E16 (Lecture)
+				</td>
+				<!-- Friday -->
+				<td></td>
+			</tr>
+			<tr>
+				<th>
+					2:00 - 3:00
+				</th>
+				<!-- Monday -->
+				<td></td>
+				<!-- Tuesday -->
+				<td></td>
+				<!-- Wednesday -->
+				<!-- Humans Lab -->
+				<!-- Thursday -->
+				<td class="graphics">
+					Graphics<br />
+					E10 (Lecture)
+				</td>
+				<!-- Friday -->
+				<td></td>
+			</tr>
+			<tr>
+				<th>
+					3:00 - 4:00
+				</th>
+				<!-- Monday -->
+				<td></td>
+				<!-- Tuesday -->
+				<td></td>
+				<!-- Wednesday -->
+				<td></td>
+				<!-- Thursday -->
+				<td></td>
+				<!-- Friday -->
+				<td></td>
+			</tr>
+			<tr>
+				<th>
+					4:00 - 5:00
+				</th>
+				<!-- Monday -->
+				<td></td>
+				<!-- Tuesday -->
+				<td></td>
+				<!-- Wednesday -->
+				<td></td>
+				<!-- Thursday -->
+				<td class="groupProjectLabTutorial">
+					Group Project<br />
+					KF7 (Tutorial)
+				</td>
+				<!-- Friday -->
+				<td></td>
+			</tr>
+		</table>
+		<table id="courses">
+			<tr>
+				<th>
+					Course Code
+				</th>
+				<th>
+					Course Name
+				</th>
+				<th>
+					Nickname
+				</th>
+			</tr>
+			<tr class="graphics">
+				<td>
+					COSC363
+				</td>
+				<td>
+					Computer Graphics
+				</td>
+				<td>
+					Graphics
+				</td>
+			</tr>
+			<tr class="humans">
+				<td>
+					COSC368
+				</td>
+				<td>
+					Humans and Computers
+				</td>
+				<td>
+					Humans
+				</td>
+			</tr>
+			<tr class="softwareEngineering">
+				<td>
+					SENG301
+				</td>
+				<td>
+					Advanced Software Engineering
+				</td>
+				<td>
+					Software Engineering
+				</td>
+			</tr>
+			<tr class="groupProject">
+				<td>
+					SENG302
+				</td>
+				<td>
+					Software Engineering Group Project
+				</td>
+				<td>
+					Group Project
+				</td>
+			</tr>
+		</table>
+		<table id="dates">
+			<tr>
+				<td>
+					20 February - 30 March
+				</td>
+				<td>
+					31 March 22 April
+				</td>
+				<td>
+					23 April - 1 June
+				</td>
+				<td>
+					2 June - 10 June
+				</td>
+				<td>
+					11 June - 23 June
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Term 1
+				</td>
+				<td>
+					Break
+				</td>
+				<td>
+					Term 2
+				</td>
+				<td>
+					Study Break
+				</td>
+				<td>
+					Exams
+				</td>
+			</tr>
+			<tr>
+				<td colspan="5">
+					24 June - 8 July
+				</td>
+			</tr>
+			<tr>
+				<td colspan="5">
+					Break
+				</td>
+			</tr>
+			<tr>
+				<td>
+					9 July - 17 August
+				</td>
+				<td>
+					18 August - 2 September
+				</td>
+				<td>
+					3 September - 12 October
+				</td>
+				<td>
+					13 October - 22 October
+				</td>
+				<td>
+					23 October - 9 November
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Term 3
+				</td>
+				<td>
+					Break
+				</td>
+				<td>
+					Term 4
+				</td>
+				<td>
+					Study Break
+				</td>
+				<td>
+					Exams
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
